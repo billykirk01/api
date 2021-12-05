@@ -1,12 +1,11 @@
 import {json, serve, serveStatic, serveRemote} from "https://deno.land/x/verse/mod.ts";
 
-
 serve(8000, {
     // you can serve plain text
     "/hello": () => new Response("Hello World!"),
 
     // json
-    "/json": () => json({message: "hello world"}),
+    "/json": () => json({message: "Hello World"}),
 
     // a single file
     "/": serveStatic("./public/index.html"),
