@@ -2,10 +2,10 @@ import {json, serve, serveStatic, serveRemote} from "https://deno.land/x/verse/m
 
 serve(8000, {
     // you can serve plain text
-    "/hello": () => new Response("Hello from Deno Deploy"),
+    "/hello": () => new Response("Hello from api.billykirk.dev"),
 
     // json
-    "/json": () => json({message: "Hello from Deno Deploy"}),
+    "/json": () => json({message: "Hello from api.billykirk.dev"}),
 
     // a single file
     "/": serveStatic("./public/index.html"),
